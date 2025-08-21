@@ -16,6 +16,7 @@ const requestHandler = createRequestHandler(
 
 export default {
   fetch(request, env, ctx) {
+    console.log('sup')
     return requestHandler(request, {
       cloudflare: { env, ctx },
     });
